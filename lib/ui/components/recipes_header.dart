@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
 class RecipesHeader extends StatelessWidget {
@@ -108,10 +109,13 @@ class _RecipesHeaderDelegate extends SliverPersistentHeaderDelegate {
         Align(
           alignment: Alignment.bottomCenter,
           child: Padding(
-            padding: EdgeInsets.only(left: 15.0, bottom: 40.0, right: 15.0),
-            child: Text(
+            padding: EdgeInsets.only(left: 45.0, bottom: 40.0, right: 45.0),
+            child: AutoSizeText(
               title,
               style: TextStyle(color: Color(0xff161531), fontSize: 33.0, fontWeight: FontWeight.bold),
+              maxFontSize: 33,
+              maxLines: 1,
+              minFontSize: 10.0,
             ),
           ),
         ),
