@@ -1,7 +1,8 @@
 import 'package:bodyo/ui/components/recipes_banner.dart';
 import 'package:bodyo/ui/components/recipes_banner_tab_bar.dart';
 import 'package:bodyo/ui/components/recipes_header.dart';
-import 'package:bodyo/ui/components/recipes_page_view.dart';
+import 'package:bodyo/ui/components/recipes_ingredients_tab.dart';
+import 'package:bodyo/ui/components/recipes_instructions_tab.dart';
 import 'package:bodyo/ui/components/recipes_tab_bar.dart';
 import 'package:flutter/material.dart';
 
@@ -36,7 +37,13 @@ class _HomeScreenState extends State<HomeScreen>
             ),
           ];
         },
-        body: RecipesPageView(tabController: _tabController),
+        body: TabBarView(
+          controller: _tabController,
+          children: [
+            RecipesInstructionsTab(),
+            RecipesIngredientsTab(),
+          ],
+        ),
       ),
     );
   }
