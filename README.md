@@ -1,16 +1,18 @@
-# bodyo
+# BodyO
 
-A new Flutter project.
+BodyO test technique.
 
-## Getting Started
+## Capture d'écran
 
-This project is a starting point for a Flutter application.
+![bodyo](https://user-images.githubusercontent.com/43547568/114231296-8ae11a00-997a-11eb-96d6-2e7998c39009.gif)
 
-A few resources to get you started if this is your first Flutter project:
+## Installation de l'application
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+1 - Clonner le projet
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+2 - Dans le terminal entrer la commande suivante : $cd [PATH_TO_BODYO_PROJECT]
+
+3 - Puis : $flutter pub get
+
+4 - Ouvrir le projet dans votre éditeur de texte (vscode, android studio ...) et lancer le programme
+
