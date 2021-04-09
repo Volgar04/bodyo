@@ -4,9 +4,10 @@ class CustomBottomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 55.0,
+      height: 55.0 + MediaQuery.of(context).padding.bottom,
       width: double.infinity,
       color: Colors.white,
+      padding: EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom),
       child: Row(
         children: [
           NavigationBarItem(
