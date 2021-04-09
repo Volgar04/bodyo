@@ -32,7 +32,8 @@ class _RecipesHeaderDelegate extends SliverPersistentHeaderDelegate {
   });
 
   @override
-  Widget build(BuildContext context, double shrinkOffset, bool overlapsContent) {
+  Widget build(
+      BuildContext context, double shrinkOffset, bool overlapsContent) {
     return Stack(
       fit: StackFit.expand,
       children: <Widget>[
@@ -67,7 +68,8 @@ class _RecipesHeaderDelegate extends SliverPersistentHeaderDelegate {
         Align(
           alignment: Alignment.topRight,
           child: Padding(
-            padding: EdgeInsets.only(right: 15.0, top: MediaQuery.of(context).padding.top + 15.0),
+            padding: EdgeInsets.only(
+                right: 15.0, top: MediaQuery.of(context).padding.top + 15.0),
             child: Container(
               height: 42.0,
               width: 42.0,
@@ -94,7 +96,8 @@ class _RecipesHeaderDelegate extends SliverPersistentHeaderDelegate {
         Align(
           alignment: Alignment.topLeft,
           child: Padding(
-            padding: EdgeInsets.only(left: 15.0, top: MediaQuery.of(context).padding.top + 15.0),
+            padding: EdgeInsets.only(
+                left: 15.0, top: MediaQuery.of(context).padding.top + 15.0),
             child: Container(
               height: 42.0,
               width: 42.0,
@@ -109,10 +112,13 @@ class _RecipesHeaderDelegate extends SliverPersistentHeaderDelegate {
         Align(
           alignment: Alignment.bottomCenter,
           child: Padding(
-            padding: EdgeInsets.only(left: 45.0, bottom: 40.0, right: 45.0),
+            padding: EdgeInsets.only(left: 45.0, bottom: 20.0, right: 45.0),
             child: AutoSizeText(
               title,
-              style: TextStyle(color: Color(0xff161531), fontSize: 33.0, fontWeight: FontWeight.bold),
+              style: TextStyle(
+                  color: Color(0xff161531),
+                  fontSize: 33.0,
+                  fontWeight: FontWeight.bold),
               maxFontSize: 33,
               maxLines: 1,
               minFontSize: 10.0,

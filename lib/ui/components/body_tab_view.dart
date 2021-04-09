@@ -13,6 +13,7 @@ class BodyTabView extends StatelessWidget {
       child: Builder(
         builder: (BuildContext context) {
           return CustomScrollView(
+            physics: BouncingScrollPhysics(),
             slivers: [
               SliverPadding(
                 padding: EdgeInsets.symmetric(vertical: 15.0),

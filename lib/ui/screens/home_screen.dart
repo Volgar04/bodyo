@@ -31,6 +31,7 @@ class _HomeScreenState extends State<HomeScreen>
             child: Stack(
               children: [
                 NestedScrollView(
+                  physics: BouncingScrollPhysics(),
                   headerSliverBuilder:
                       (BuildContext context, bool innerBoxIsScrolled) {
                     return <Widget>[
@@ -45,6 +46,7 @@ class _HomeScreenState extends State<HomeScreen>
                     ];
                   },
                   body: TabBarView(
+                    physics: BouncingScrollPhysics(),
                     controller: _tabController,
                     children: [
                       RecipesInstructionsTab(),
